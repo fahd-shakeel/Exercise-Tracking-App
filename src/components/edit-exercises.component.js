@@ -37,7 +37,7 @@ const EditExercises = (props) =>{
         }
         console.log(exercise);
 
-        axios.post(`http://localhost:3000/exercises/update/${params.id}`,exercise)
+        axios.post(`https://exercise-tracking-app-1.onrender.com/update/${params.id}`,exercise)
             .then(res => console.log(res.data))
             .catch(err => console.log("Error: "+err))
 
@@ -45,7 +45,7 @@ const EditExercises = (props) =>{
     }
     
     useEffect(()=>{
-        axios.get(`http://localhost:3000/exercises/${params.id}`)
+        axios.get(`https://exercise-tracking-app-1.onrender.com/exercises/${params.id}`)
             .then((response) => {
                 onChangeUsername(response.data.username)
                 
