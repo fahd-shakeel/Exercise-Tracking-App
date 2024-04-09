@@ -29,7 +29,7 @@ function ChangePassword() {
             confirmPassword:confirmPassword,
         }
 
-        axios.post(`http://localhost:3000/changepassword`,details)
+        axios.post(`https://exercise-tracking-app-1.onrender.com/changepassword`,details)
         .then(res=>{navigate('/login',{replace:true})})
         .catch(err=>alert('SignUp is not done yet'))
 
