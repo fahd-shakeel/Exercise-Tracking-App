@@ -21,7 +21,7 @@ const LoginPage=() =>{
             password:password
         }
 
-        await axios.post(`http://localhost:3000/login`,loginDetail)
+        await axios.post(`https://exercise-tracking-app-1.onrender.com//login`,loginDetail)
         .then((res)=>{
             const token = res.data.jsonwebtoken;
             localStorage.setItem('user-token',token);
