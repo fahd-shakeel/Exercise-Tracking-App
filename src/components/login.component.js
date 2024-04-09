@@ -26,11 +26,11 @@ const LoginPage=() =>{
             const token = res.data.jsonwebtoken;
             localStorage.setItem('user-token',token);
             navigate('/',{replace:true});
-            // setTimeout(()=>{
-            //     localStorage.clear();
-            //     alert("session time out");
-            //     window.location.reload();
-            // },1000*60)
+            setTimeout(()=>{
+                localStorage.clear();
+                alert("session time out");
+                window.location.reload();
+            },1000*120)
         })
         .catch((err)=>alert('Incorrect Email or Password'))  
     }
