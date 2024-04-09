@@ -23,7 +23,7 @@ export default class ExercisesList extends Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:3000/exercises/')
+        axios.get('https://exercise-tracking-app-1.onrender.com/exercises/')
             .then(response => {
                 this.setState({
                     exercises: response.data
@@ -33,7 +33,7 @@ export default class ExercisesList extends Component{
     }
 
     deleteExercise(id){
-        axios.delete('http://localhost:3000/exercises/'+id)
+        axios.delete('https://exercise-tracking-app-1.onrender.com/exercises/'+id)
             .then(res => console.log(res.data))
         // this.setState({
         //     exercises : this.setState.exercises.filter(el => el._id!==id)
