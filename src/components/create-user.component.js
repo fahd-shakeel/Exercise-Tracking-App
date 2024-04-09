@@ -39,7 +39,7 @@ export default class CreateExercise extends Component{
             username:''
         })
 
-        axios.post('http://localhost:3000/users/add',user)
+        axios.post('https://exercise-tracking-app-1.onrender.com/users/add',user)
         .then(res => console.log(res.data))
         .catch(err => console.log('Error: '+err))
 
