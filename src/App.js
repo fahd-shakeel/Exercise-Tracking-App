@@ -25,7 +25,7 @@ function App() {
 
   return (
 
-    <div className="container-fluid">
+    <div className="container">
       
       <Routes>
         <Route path="/login" exact Component={LoginPage} />
