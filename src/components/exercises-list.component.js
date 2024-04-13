@@ -49,7 +49,7 @@ export default class ExercisesList extends Component{
 
     render(){
         return(
-            <div className="container">
+            <div">
                 <h3>Logged Exercises</h3>
                 <table className="table table-responsive-sm">
                     <thead className="thead-light">
