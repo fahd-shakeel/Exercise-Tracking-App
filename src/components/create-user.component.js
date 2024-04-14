@@ -26,7 +26,7 @@ export default class CreateExercise extends Component{
         });
     }
 
-    onSubmit(e){
+    onSubmit=async=>(e){
         e.preventDefault();
 
         const user = {
@@ -39,7 +39,7 @@ export default class CreateExercise extends Component{
             username:''
         })
 
-        axios.post('https://exercise-tracking-app-1.onrender.com/users/add',user)
+        await axios.post('https://exercise-tracking-app-1.onrender.com/users/add',user)
         .then(res => console.log(res.data))
         .catch(err => console.log('Error: '+err))
 
