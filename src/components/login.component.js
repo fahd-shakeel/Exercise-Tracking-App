@@ -54,6 +54,12 @@ const LoginPage=() =>{
                     </div>
                 </form>
             </div>
+            <div>
+                <p>Note:<br/>
+                    Email - admin@admin.com<br/>
+                    Password - admin
+                </p>
+            </div>
         </div>
     ) 
 }
